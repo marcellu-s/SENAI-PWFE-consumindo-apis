@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/img/programacao.png">
+    <title>ViaCEP</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/viaCep/style.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="../index.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-12 w-auto" src="../assets/img/programacao.png" alt="programacao">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+                        id="open-menu">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="../index.html" class="text-sm font-semibold leading-6 text-white">Início</a>
+                    <a href="./catAPI.html" class="text-sm font-semibold leading-6 text-white">Cat API</a>
+                    <a href="./openWeather.html" class="text-sm font-semibold leading-6 text-white">OpenWeather API</a>
+                    <a href="./pokeAPI.html" class="text-sm font-semibold leading-6 text-white">Poke API</a>
+                    <a href="./rickAndMortyAPI.html" class="text-sm font-semibold leading-6 text-white">Rick and Morty API</a>
+                    <a href="./viaCep.html" class="text-sm font-semibold leading-6 text-white in-page">ViaCEP API</a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="lg:hidden hidden" role="dialog" aria-modal="true" id="mobile-menu">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-10"></div>
+                <div
+                    class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-mobile-menu px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="../index.html" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-12 w-auto" src="../assets/img/programacao.png" alt="programacao">
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-white" id="close-menu">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-white">
+                            <div class="space-y-2 py-6">
+                                <a href="../index.html"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white">Início</a>
+                                <a href="./catAPI.html"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white">Cat API</a>
+                                <a href="./openWeather.html"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white">OpenWeather API</a>
+                                <a href="./pokeAPI.html"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white">Poke API</a>
+                                <a href="./rickAndMortyAPI.html"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white">Rick and Morty API</a>
+                                <a href="./viaCep.html"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white in-page">ViaCEP API</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="via-cep-area">
+        <div class="container-via-cep">
+            <div class="header">
+                <h1>Consulte seu endereço a partir do CEP</h1>
+            </div>
+            <form>
+                <div class="input-control">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="Informe seu CEP">
+                </div>
+                <div class="input-control">
+                    <label for="logradouro">LOGRADOURO</label>
+                    <input type="text" name="logradouro" id="logradouro" readonly>
+                </div>
+                <div class="input-control">
+                    <label for="bairro">BAIRRO</label>
+                    <input type="text" name="bairro" id="bairro" readonly>
+                </div>
+                <div class="input-control">
+                    <label for="cidade">CIDADE</label>
+                    <input type="text" name="cidade" id="cidade" readonly>
+                </div>
+                <div class="input-control">
+                    <label for="uf">UF</label>
+                    <input type="text" name="uf" id="uf" readonly>
+                </div>
+                <div class="btn-input">
+                    <button type="submit">Consultar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../assets/js/mobileMenu.js"></script>
+    <script src="../assets/js/viaCep/script.js"></script>
+</body>
+</html>
