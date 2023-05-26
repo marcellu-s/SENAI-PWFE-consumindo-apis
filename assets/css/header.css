@@ -1,0 +1,19 @@
+header a:hover {
+    color: #999;
+}
+
+header a.in-page {
+    color: #999;
+    pointer-events: none;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.bg-mobile-menu {
+    background-color: #333;
+}

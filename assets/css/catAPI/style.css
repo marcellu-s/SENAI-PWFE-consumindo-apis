@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cat-api-area {
+    height: 100vh;
+    width: 100%;
+
+    /* background-image: url('https://cdn2.thecatapi.com/images/cn8.gif'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.cat-api-area .load-more-cats {
+    width: 150px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+}
+
+
+.cat-api-area #div-press {
+    background-image: url('../../img/press.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+
+.cat-api-area #div-no-press {
+    background-image: url('../../img/no-press.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 2;
+}

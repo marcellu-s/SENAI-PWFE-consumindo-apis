@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.rick-and-morty-api-area {
+    padding-top: 6rem;
+}
+
+.characters-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.character {
+    max-width: 200px;
+    max-height: 295px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid rgb(54, 54, 152);
+    padding: 1rem;
+
+    overflow-y: auto;
+}
+
+.character::-webkit-scrollbar { 
+	display: none;
+}
+
+.character-image {
+    position: relative;
+}
+
+.character-image img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.character-is-alive {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    padding: .25rem .5rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.character-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.character-gender, .character-species {
+    font-weight: 300;
+}
+
+.pagination {
+    margin: 3rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.page {
+    text-decoration: none;
+    border: 1px solid #333;
+    font-family: monospace;
+    padding: .3rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.page.atual {
+    background-color: #555;
+}
+
+.Alive {
+    background-color: rgb(22, 200, 105);
+}
+
+.Dead {
+    background-color: #c61e1e;
+}
+
+.unknown {
+    background-color: #333;
+}
