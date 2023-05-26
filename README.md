@@ -6,13 +6,13 @@ Trabalho individual
 
 API's utilizadas:
 <ul>
-    <li><a href='https://thecatapi.com'>The Cat API</li>
-    <li><a href='https://openweathermap.org'>OpenWeather API</li>
-    <li><a href='https://pokeapi.co'>Poké API</li>
-    <li><a href='https://rickandmortyapi.com'>The Rick and Morty API</li>
-    <li><a href='https://viacep.com.br'>ViaCEP</li>
+    <li><a href='https://thecatapi.com'>The Cat API</a></li>
+    <li><a href='https://openweathermap.org'>OpenWeather API</a></li>
+    <li><a href='https://pokeapi.co'>Poké API</a></li>
+    <li><a href='https://rickandmortyapi.com'>The Rick and Morty API</a></li>
+    <li><a href='https://viacep.com.br'>ViaCEP</a></li>
 </ul>
 
-Link: https://marcellu-s.github.io/SENAI-PWFE-consumindo-apis/
+Link: <a href='https://marcellu-s.github.io/SENAI-PWFE-consumindo-apis/' target='_blank'>ViaCEP</a>
 
 Realizado no: 2º Semestre 2022/2023
