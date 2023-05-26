@@ -6,7 +6,7 @@ Trabalho individual
 
 API's utilizadas:
 <ul>
-    <li>Teste</li>
+    <li><a href='https://thecatapi.com'>The Cat API</li>
 </ul>
 
 Realizado no: 2º Semestre 2022/2023
