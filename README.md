@@ -1,6 +1,6 @@
 # Consumindo 5 API's
 Disciplina: Programação Front-End.<br>
-Proposta: Consumir 5 API's de sua escolha, e apresentá-las individualmente em um site.<br>
+Proposta: Consumir 5 API's de sua escolha, e apresentá-las em um site.<br>
 
 Trabalho individual
 
