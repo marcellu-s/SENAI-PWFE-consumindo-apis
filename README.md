@@ -13,6 +13,6 @@ API's utilizadas:
     <li><a href='https://viacep.com.br'>ViaCEP</a></li>
 </ul>
 
-Link: <a href='https://marcellu-s.github.io/SENAI-PWFE-consumindo-apis/' target='_blank'>ViaCEP</a>
+Link: <a href='https://marcellu-s.github.io/SENAI-PWFE-consumindo-apis/' target='_blank'>Site hospedado no GitHub Pages</a>
 
 Realizado no: 2º Semestre 2022/2023
