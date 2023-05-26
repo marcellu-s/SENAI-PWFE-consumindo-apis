@@ -7,6 +7,10 @@ Trabalho individual
 API's utilizadas:
 <ul>
     <li><a href='https://thecatapi.com'>The Cat API</li>
+    <li><a href='https://openweathermap.org'>OpenWeather API</li>
+    <li><a href='https://pokeapi.co'>Poké API</li>
+    <li><a href='https://rickandmortyapi.com'>The Rick and Morty API</li>
+    <li><a href='https://viacep.com.br'>ViaCEP</li>
 </ul>
 
 Realizado no: 2º Semestre 2022/2023
