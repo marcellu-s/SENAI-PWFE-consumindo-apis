@@ -15,4 +15,5 @@ API's utilizadas:
 
 Link: <a href='https://marcellu-s.github.io/SENAI-PWFE-consumindo-apis/'>Site hospedado no GitHub Pages</a>
 
+Realizado durante o meu período de estudos no Senai Suíço-Brasileira.<br>
 Realizado no: 2º Semestre 2022/2023
